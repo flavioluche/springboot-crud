@@ -34,7 +34,7 @@ public class FakePersonDataAccessService implements PersonDao {
 	}
 
 	@Override
-	public int deletePerson(UUID id) {
+	public int deletePersonById(UUID id) {
 		
 		Optional<Person> personMaybe = selectPersonById(id);
 		if (!personMaybe.isPresent()) {
